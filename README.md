@@ -10,8 +10,14 @@ The increasing number of actions in the real world makes it difficult for tradit
 - **Local spatial context**: Existing best methods are transformer-based which capture global context via self-attention, but miss out on local details.
 - **Duality**: Objects and action environments play a dual role of promoting distinguishability and functional similarity, assisting action recognition of both seen and unseen classes.
 
-- We propose a **generative approach and introduced triplet loss** during feature generation to account for inter-class dissimilarity.
+### Approach
+We propose a two-stage framework (as shown in the figure below) that contains a novel transformer called LoCATe and a graph attention network (GAT):
 
-- Moreover, we show that **maintaining cyclic consistency** between the generated visual features and their class semantics is helpful for improving the quality of the generated features.
+- **Local Context-Aggregating Temporal transformer (LoCATe)**: Captures multi-scale local context using dilated convolutional layers during temporal modeling
+- **GAT**: Models semantic relationships between action classes and achieves a strong synergy with the video embeddings produced by LoCATe
 
-- **Addressed problems** such as high false positive rate and misclassification of localized objects by resolving semantic confusion, and **comprehensively beat the state-of-the-art methods**.
+### Outcomes
+- State-of-the-art/comparable results on four benchmark datasets
+- Best results on the recently proposed TruZe evaluation protocol
+- Uses 25x lesser parameters than existing methods
+- Mitigates the polysemy problem better than previous methods
