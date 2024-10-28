@@ -51,12 +51,38 @@ datasets
 │       │   v___dXUJsj3yo.mp4
 │       |   ...
 │
-└───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
+└───hmdb
+│   └───hmdb51_org
+│       └───brush_hair
+│       └───cartwheel
+│       └───...
 │   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───kinetics-400
+│   └───train_256
+│   │   └───abseiling
+│   │   └───air_drumming
+│   │   └───...
+│   │
+│   └───val_256
+│   │   └───abseiling
+│   │   └───air_drumming
+│   │   └───...
+│   └───zsar_kinetics_400
+│   
+└───kinetics-600
+│   │   download.py
+│   │   test.csv  
+│   │   validate.csv
+│   │ 
+│   └───test
+│   │   └───abseiling
+│   │   └───acting in play
+│   │   └───...
+│   │
+│   └───validate
+│   │   └───abseiling
+│   │   └───acting in play
+│   │   └───...
+│   └───zsar_kinetics_600
+
 ```
