@@ -25,21 +25,25 @@ We propose a two-stage framework (as shown in the figure below) that contains a 
 ## 📁 Preparing the datasets
 
 We have evaluated our method on four benchmarks: 
-- [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web. Zero-shot splits for both of them can be extracted on-the-fly using ```datasets/Label.mat``` and ```datasets/Split.mat``` (code in ```own_zsar/baseline/dataset.py```)
-- For ActivityNet, fill [this](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) form to request for the dataset. and then use this script for downloading the videos.
+- [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web. Zero-shot splits for both these datasets are provided within ```datasets/Label.mat``` and ```datasets/Split.mat```.
+- For ActivityNet, fill [this](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) form to request for the dataset. Zero-shot splits are provided in the folder ```datasets/ActivityNet_v_1_3```.
 
-  I followed an example in another repository and wrapped the directory structure within a pair of triple backticks (```):
 
 ```
 datasets
-│   README.md
-│   file001.txt    
+│   Label.mat
+│   Split.mat    
 │
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
-│   │
-│   └───subfolder1
+└───ActivityNet_v_1_3
+│   │   activity_net.v1-3.min.json
+│   │   anet_classwise_videos.npy
+│   |   anet_splits.npy
+│   └───Anet_videos_15fps_short256
+│       │   v___c8enCfzqw.mp4
+│       │   v___dXUJsj3yo.mp4
+│       |   ...
+│
+└───subfolder1
 │       │   file111.txt
 │       │   file112.txt
 │       │   ...
