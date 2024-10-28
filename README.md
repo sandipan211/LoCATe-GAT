@@ -35,7 +35,7 @@ We have evaluated our method on four benchmarks:
   cd datasets/kinetics-600
   python download.py {dataset_split}.csv <data_dir>
   ```
-
+The final datasets directory should have the following structure:
 
 ```
 datasets
@@ -84,5 +84,10 @@ datasets
 │   │   └───acting in play
 │   │   └───...
 │   └───zsar_kinetics_600
-
+│   
+└───ucf
+│   └───UCF101
+│       └───ApplyEyeMakeup
+│       └───ApplyLipstick
+│       └───...
 ```
