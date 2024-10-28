@@ -31,7 +31,7 @@ We have evaluated our method on four benchmarks:
   I followed an example in another repository and wrapped the directory structure within a pair of triple backticks (```):
 
 ```
-project
+datasets
 │   README.md
 │   file001.txt    
 │
