@@ -27,7 +27,10 @@ We propose a two-stage framework (as shown in the figure below) that contains a 
 We have evaluated our method on four benchmarks: 
 - [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web. Zero-shot splits for both these datasets are provided within ```datasets/Label.mat``` and ```datasets/Split.mat```.
 - For [ActivityNet](http://activity-net.org/download.html), fill [this](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) form to request for the dataset. Zero-shot splits are provided in the folder ```datasets/ActivityNet_v_1_3```.
-- For Kinetics, we followed [ER-ZSAR (ICCV 2021)](https://github.com/DeLightCMU/ElaborativeRehearsal) for obtaining the zero-shot splits. Training is done on the entire Kinetics-400 dataset, and testing is done on subsets of Kinetics-600.
+- For Kinetics, we followed [ER-ZSAR (ICCV 2021)](https://github.com/DeLightCMU/ElaborativeRehearsal) for obtaining the zero-shot splits. Training is done on the entire Kinetics-400 dataset, and testing is done on subsets of Kinetics-600. Zero-shot splits are provided in the folder ```datasets/kinetics-400``` and ```datasets/kinetics-600```.
+      - Kinetics-400 has been downloaded following [this](https://github.com/youngwanLEE/VoV3D/blob/main/DATA.md#kinetics-400) repo.
+      - For Kinetics-600, we downloaded the videos of the validate and test sets only.  ```youtube-dl``` package doesn't work seamlessly anymore, so we switched to using ```yt-dlp```, which can be installed following the commands [here](https://www.rapidseedbox.com/blog/yt-dlp-complete-guide). 
+      
 
 
 ```
