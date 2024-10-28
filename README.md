@@ -21,3 +21,9 @@ We propose a two-stage framework (as shown in the figure below) that contains a 
 - Best results on the recently proposed TruZe evaluation protocol
 - Uses 25x lesser parameters than existing methods
 - Mitigates the polysemy problem better than previous methods
+
+## 🗄️ Preparaing the datasets
+
+We have evaluted our method on four benchmarks: 
+- [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web.
+- Download the json file for [ActivityNet-v1.3](http://ec2-52-25-205-214.us-west-2.compute.amazonaws.com/files/activity_net.v1-3.min.json) and then use this script for downloading the videos.
