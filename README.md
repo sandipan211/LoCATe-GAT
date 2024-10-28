@@ -25,8 +25,8 @@ We propose a two-stage framework (as shown in the figure below) that contains a 
 ## 📁 Preparing the datasets
 
 We have evaluated our method on four benchmarks: 
-- [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web.
-- Download the json file for [ActivityNet-v1.3](http://ec2-52-25-205-214.us-west-2.compute.amazonaws.com/files/activity_net.v1-3.min.json) and then use this script for downloading the videos.
+- [UCF-101](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and [HMDB-51](serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) can be directly downloaded from the web. Zero-shot splits for both of them can be extracted on-the-fly using ```datasets/Label.mat``` and ```datasets/Split.mat``` (code in ```own_zsar/baseline/dataset.py```)
+- For ActivityNet, fill [this](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) form to request for the dataset. and then use this script for downloading the videos.
 
   I followed an example in another repository and wrapped the directory structure within a pair of triple backticks (```):
 
