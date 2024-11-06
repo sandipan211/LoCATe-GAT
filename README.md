@@ -109,7 +109,7 @@ For the val and test sets, run:
 ```bash
 python3 kinetics_utils.py --action=find_corrupt --dataset=k600 --data=D --split_index=N
 ```
-where N is the split number (0/1/2) and D = val/test. All these commands can also be found in scripts/kinetics_preprocess.sh.
+where N is the split number (0/1/2) and D = val/test. All these commands can also be found in ```scripts/kinetics_preprocess.sh```.
 
 ### Training LoCATe
 ```bash
