@@ -92,3 +92,12 @@ datasets
 │       └───...
 ```
 ## 🚄 Training
+
+The dependencies can be installed by creating an Anaconda environment using locate-gat-env.yml in the following command:
+
+```bash
+conda env create -f locate-gat-env.yml
+conda activate zsar
+```
+### Training LoCATe
+
