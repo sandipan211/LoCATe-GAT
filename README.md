@@ -99,5 +99,47 @@ The dependencies can be installed by creating an Anaconda environment using loca
 conda env create -f locate-gat-env.yml
 conda activate zsar
 ```
+All the commands for running the codes can be found in the ```scripts``` folder. Make sure to set the appropriate paths and directory names as you please for storing the logs and checkpoints. Moreover, the Kinetics dataset (train, val, and test) needs preprocessing. The training set (K400) can be preprocessed using:
+
+```bash
+python3 kinetics_utils.py --action=find_corrupt --dataset=k400 --data=train
+```
+For the val and test sets, run:
+
+```bash
+python3 kinetics_utils.py --action=find_corrupt --dataset=k600 --data=D --split_index=N
+```
+where N is the split number (0/1/2) and D = val/test. All these commands can also be found in scripts/kinetics_preprocess.sh.
+
 ### Training LoCATe
+```bash
+cd scripts
+sh train_transformer_<DATASET_NAME>.sh
+```
+where <DATASET_NAME> = ucf/hmdb/anet/kinetics.
+
+### Training GAT
+```bash
+cd scripts
+sh train_kg_<DATASET_NAME>.sh
+```
+## 🔍 Zero-shot testing
+For conventional setting:
+```bash
+cd scripts
+sh test_GATtransformer_<DATASET_NAME>.sh
+```
+
+For generalized setting:
+```bash
+cd scripts
+sh gzsl_test_GATtransformer_<DATASET_NAME>.sh
+```
+## ‼️ Evaluation as per TruZe protocol
+Following [[1]](#1), we trained and evaluated model performance on stricter zero-shot settings. All the commands to run are enumerated in ```scripts/truze_ZSAR.sh```.
+
+
+# :scroll: References
+<a id="1">[1]</a> 
+Gowda, S. N., Sevilla-Lara, L., Kim, K., Keller, F., & Rohrbach, M. (2021, September). A new split for evaluating true zero-shot action recognition. In DAGM German Conference on Pattern Recognition (pp. 191-205). Cham: Springer International Publishing.
 
