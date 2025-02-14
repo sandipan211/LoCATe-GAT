@@ -11,6 +11,9 @@ The increasing number of actions in the real world makes it difficult for tradit
 - **Duality**: Objects and action environments play a dual role of promoting distinguishability and functional similarity, assisting action recognition of both seen and unseen classes.
 
 ### 💡 Approach
+
+<img width="698" alt="locate-gat archi" src="https://github.com/user-attachments/assets/f10b8acb-62b5-4026-aa51-fd9d81023919" />
+
 We propose a two-stage framework (as shown in the figure below) that contains a novel transformer called LoCATe and a graph attention network (GAT):
 
 - **Local Context-Aggregating Temporal transformer (LoCATe)**: Captures multi-scale local context using dilated convolutional layers during temporal modeling
